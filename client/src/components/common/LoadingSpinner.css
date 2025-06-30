@@ -1,0 +1,32 @@
+/* src/components/common/LoadingSpinner.css */
+.loading-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loading-spinner-container.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 19, 25, 0.8);
+  z-index: 1000;
+}
+
+.spinner {
+  border-radius: 50%;
+  border: 3px solid var(--border); /* Using your border color */
+  border-top-color: var(--text-accent); /* Using your accent color */
+  animation: spin 1s linear infinite;
+}
+
+.spinner-message {
+  color: var(--text-primary); /* Using your text color */
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

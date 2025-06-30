@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables
+.env
+.env.local
+client/.env
+server/.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode
+.idea
+
+# Build
+build/
+dist/
+client/dist/
+server/dist/
+
+# Misc
+.DS_Store
+*.pem
